@@ -1,0 +1,401 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c0b14;
+    color: #fff;
+}
+header.hero{
+    background: url('https://cdn.dribbble.com/userupload/8869488/file/original-3fa71738ccd2d9c10a6ca4cb5d9cbb0b.jpg')no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    border-radius: 50px;
+}
+.hero-content{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-image{
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.hero-content h1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.hero-content .line1 {
+    display: block; /* Forces a line break */
+    margin-bottom: 0.2em; /* Adds space between the two lines */
+}
+
+.hero-content .line2 {
+    display: block; /* Forces the text to start on a new line */
+}
+.hero-content p{
+    font-size: 2em;
+}
+.button{
+    padding: 20ox 200px;
+    background-color: rgb(53, 50, 52);
+    color: #dae2da;
+    text-decoration: none;
+    border-radius: 20px;
+    border: solid rgb(53, 50, 50 )20px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.about{
+    background-color: #003300;
+    padding: 50px 20px;
+    text-align: center;
+}
+.about h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.about-content{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25em;
+}
+.about-contnet a.button+a.button{
+    margin-left: 10px;
+}
+.menu {
+    background-color: #75162b;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #003300;
+    padding: 20px;
+    text-align: center;
+}
+.navbar {
+    background-color: #1e0e0a;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: large;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #218b44;
+}
+.parallax{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px; /* Space between cards */
+    padding: 0px;
+}
+
+.menu-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    height: 400px; /* Set a fixed height for all cards */
+    transition: transform 0.5s ease;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-around; /* Ensures even distribution of content */
+    align-items: center;
+    margin: 5px;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1; /* Allows the content to fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+}
+
+.menu-card h3 {
+    font-size: 1em; /* Reduced font size */
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.menu-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #FFD700; /* Gold color for stars */
+}
+
+.rating span {
+    margin: 0 2px;
+}
+/* Footer styling */
+footer {
+    background-color: #163a19; /* Adjust background color as needed */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+    margin-top: 50px; /* Add space above the footer */
+    position: relative; /* Ensure footer's position is relative for margin adjustment */
+}
+/* Contact section styling */
+.contact {
+    background-color:#bb5a5a; /* Light grey background */
+    padding: 40px 20px; /* Padding for top/bottom and left/right */
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.contact-item h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background-color: #380a0a; /* White background for the form */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color:#59a985; /* Dark background color */
+    color: #1b1414; /* White text color */
+    padding: 10px;
+    border: none;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+.menu-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.button {
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typing-effect {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #333;
+    animation: typing 4s steps(40, end) infinite;
+}
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.menu-card img {
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
